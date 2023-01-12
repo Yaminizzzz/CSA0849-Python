@@ -1,0 +1,11 @@
+ef sort_names(names, order):
+    if order == "Ascending":
+        return sorted(names)
+    elif order == "Descending":
+        return sorted(names, reverse=True)
+    else:
+        return "Invalid order choice"
+
+names = ["John", "Amy", "Bob", "Chris"]
+order = input("Enter sort order (Ascending/Descending): ")
+print(sort_names(names, order))
